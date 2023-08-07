@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymelaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"  >
+
+<head>
+
+    <title>access denied</title>
+</head>
+<body>
+
+<h1>access denied</h1>
+<a th:href="@{/}">Go Back</a>
+<hr/>
+
+
+<form action="#" th:action="@{/logout}" method="post">
+    <input type="submit" value="Logout">
+</form>
+
+</body>
+</html>

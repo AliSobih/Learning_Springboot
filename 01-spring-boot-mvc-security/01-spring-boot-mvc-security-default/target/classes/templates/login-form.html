@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymelaf.org">
+
+<head>
+
+    <title>Login</title>
+</head>
+<body>
+
+    <h2>Login to your account</h2>
+    <form action="#" th:action="@{/authenticateTheUser}"
+          method="POST">
+        <div th:if = "${param.error}">
+            <i style="color:red">Sorry, Error in username or password</i>
+        </div>
+        <input type="text" name="username" placeholder="username" />
+        <br>
+        <input type="password" name="password" placeholder="password" />
+        <input type="submit" value="Login" class="btn"/>
+    </form>
+</body>
+</html>
